@@ -4,7 +4,7 @@ import avatar from '../assets/profile.png'
 import styles from '../styles/Username.module.css'
 import { Toaster } from 'react-hot-toast'
 import { useFormik } from 'formik'
-import { passwordValiate } from '../helper/validate'
+import { passwordValidate } from '../helper/validate'
 
 export default function Password() {
 
@@ -12,7 +12,7 @@ export default function Password() {
     initialValues: {
       password: ''
     },
-    validate: passwordValiate,
+    validate: passwordValidate,
     validateOnBlur: false,
     validateOnChange: false,
     onSubmit: async values => {
